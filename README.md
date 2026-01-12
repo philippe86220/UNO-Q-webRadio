@@ -136,6 +136,6 @@ void loop() {
 ---
 
 ##  🙏 Remerciements
-Ce projet a été développé avec l’aide de ChatGPT, pour l’architecture,   
-le débogage et la mise en œuvre complète de la communication STM32 ↔ Linux.
+Ce projet a été développé avec l’aide de ChatGPT.   
+
 
