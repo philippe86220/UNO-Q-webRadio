@@ -1,11 +1,13 @@
 
 # Arduino UNO Q – Lecture d'une Web Radio depuis le navigateur internet
 
-# 🧩 Fonctionnement 100 % dans Arduino App Lab
+## 🧩 Fonctionnement 100 % dans Arduino App Lab
+
 Ce projet fonctionne entièrement à l’intérieur d’Arduino App Lab, sans logiciel externe ni serveur  
 supplémentaire.
 - Le brick `WebUI – HTML` affiche l’interface de lecture de la radio RTL dans le navigateur.
-- Le fichier Python (`main.py`) démarre le serveur Web UI et rend la page `index.html` disponible via l'IP de la carte.
+- Le fichier Python (`main.py`) démarre le serveur WebUI et rend la page `index.html`
+  accessible via l’interface Web d’Arduino App Lab (proxy WebUI).
 - SI l'IP est utilisée dans le navigateur de l'ordinateur c'est le son de sa carte son qui sera entendu.
 - SI l'IP est utilisée dans le navigateur de la UNO Q grâce à un HUB USB et HDMI mais également avec un adaptateur carte son USB avec jack 3.5
   alors le son sortira directement du jack à l'aide d'un écouteur ou d'un Haut-parleur disposant d'une entrée 3.5.
@@ -18,7 +20,7 @@ Grâce à cette interface Web locale, vous pouvez écouter la radio RTL.
 
 - Créer une interface Web permettant de lire le flux audio RTL à cette adresse : `https://icecast.rtl.fr/rtl-1-44-128`.
 
-Ce projet constitue une démonstration de lecture d'une Web Radio à aprtir de la UNO Q.
+Ce projet constitue une démonstration de lecture d'une Web Radio à partir de la UNO Q.
 Il peut servir de point de départ à une application plus complexe.
 
 
@@ -89,7 +91,6 @@ Il peut servir de point de départ à une application plus complexe.
 ---
 
 ## 🐍 Code Python (Linux / App Lab)  
-⚠️ Important : remplacez l’URL IFTTT par la vôtre.
 
 ```python
 
@@ -110,7 +111,9 @@ App.run()
 ---
 
 ## 3. Code STM32 (C++ - sketch.ino) 
-le code est vide car il l'y a pas en l'état de lien établit avec le coeur STM32. 
+Le code est volontairement vide car, dans cette démonstration,
+aucun lien n’est établi avec le cœur STM32.
+Le projet s’appuie exclusivement sur le cœur Linux via Arduino App Lab.
 
 ```C++
 
