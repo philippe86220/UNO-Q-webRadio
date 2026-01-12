@@ -130,8 +130,8 @@ void loop() {
 
 
 ## Aperçu : 
-![Présentation](Assets/IMG_6002.jpg)
-![Présentation](Assets/IMG_2349.jpg)
+![Présentation](assets/IMG_6002.jpg)
+![Présentation](assets/IMG_2349.jpg)
 
 ---
 
