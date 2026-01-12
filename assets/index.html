@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>UNO Q – WebRadio</title>
+  <style>
+    body {
+      background-color: #222;
+      color: #eee;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    audio {
+      width: 100%;
+      max-width: 400px;
+      margin-top: 20px;
+    }
+    .note {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>WebRadio RTL</h1>
+
+  <audio controls autoplay>
+    <source src="https://icecast.rtl.fr/rtl-1-44-128" type="audio/mpeg">
+    Votre navigateur ne supporte pas l'audio HTML5.
+  </audio>
+
+  <div class="note">
+    Le son sortira sur l'appareil qui ouvre cette page.
+  </div>
+
+</body>
+</html>
